@@ -1,0 +1,235 @@
+body{
+    font-family: 'Montserrat','Ubuntu', sans-serif;
+}
+
+#title {
+    background-color: #ff4c68;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h2{    
+    font-size: 3rem;   
+    text-align: justify;
+}
+
+div h3 span{
+    font-weight: 200;
+    text-align: justify;
+}
+
+.container-fluid{
+    padding: 3% 15% 7% 15%;
+}
+
+.titleH1{    
+    font-size: 3rem;    
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    padding: 0 0 4.5rem 0;
+         
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+
+.nav-item{
+    padding: 0 20px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+}
+
+
+/* BUTTONS */
+.download-button{
+    margin: 2rem 25px;
+}
+
+/* TITLE IMAGE */
+.title-image{
+    width: 50%;
+    transform: rotate(20deg);      
+    position: absolute;
+    right: 22%;
+}
+
+
+/* FEATURES */
+
+#features{
+    padding:2rem;    
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    
+}
+#features h3{
+    font-weight: bold;
+}
+
+#features p{
+    width: 70%;
+    display: inline-block;
+    color:#8f8f8f;
+}
+
+#tryItOut h3{
+    color: orangered;
+}
+
+#firstNumber, #lastNumber{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#resultText{
+    background-color: white;
+    height: 145px;    
+    width: 96%;
+}
+
+#submitButton, #clearButton{
+    
+    width: 48%;
+    text-transform: uppercase;
+    background-color: orangered;
+    border: none;
+}
+
+/* Code */
+#code{
+    text-align: center;    
+    background-color: #ef8172;
+    color: #ffffff;}
+
+#codeImage{
+    width: 100%;
+}
+
+#code h1{
+    padding-top: 3%;
+}
+
+.carousel-item{
+    padding: 3% 10%;
+}
+
+.carousel-item h3{
+    font-weight: 500;
+    color: steelblue;
+}
+
+/*  PRESS  */
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-image{
+    width: 15%;
+    margin: 20px 20px 50px 20px;
+}
+
+/* PRICING */
+
+#pricing{
+    padding: 100px;    
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Contact bottom Section */
+#contact{
+    background-color: #ff4c68;
+    padding: 5% 20%;    
+}
+
+#contact h3{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+#contactButton{
+    border:1px solid gray;
+    width: 25%;
+}
+
+/* FOOTER  */
+#footer{
+    margin: 7%;
+}
+
+#footer p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #8f8f8f;
+}
+
+#footer i{
+    margin-right: 2%;
+}
+
+/* FONT AWESOME */
+.fa, .fas{
+    font-size: 2rem;
+    color: #ef8172;  
+    margin-bottom: 1rem;  
+}
+
+.fa:hover, .fab:hover, .fas:hover{
+    color: #ef8172;
+}
+
+
+/*  MEDIA QUERIES  */
+
+@media screen and (max-width: 1028px) {
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        text-align: center;
+    }
+    .titleH1{
+        text-align: center;
+    }
+    .centerAlign{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title-image {
+      margin-top: 2%;
+      width: 50%;
+      z-index: 3;
+      position: static;
+      transform: rotate(0);           
+      
+    }    
+    .download-button{
+      margin-bottom: 0.2rem;     
+    }  
+}
+
