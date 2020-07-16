@@ -39,12 +39,9 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-
-
-
-            <!-- Title -->
-
+            </nav> 
+        
+            <!--Title-->
             <div class="row centerAlign">
                 <div class="col-lg-6 col-md-12">
                     <h1 class="titleH1">About the Project</h1>
@@ -57,12 +54,11 @@
                 </div>
             </div>
 
-        </div>
+        </div><!--end container fluid-->
     </section>
 
 
-    <!-- try it out section -->
-
+    <!--Try it out-->
     <section id="tryItOut">
         <div class="container-fluid">
             <div class="row">
@@ -96,68 +92,64 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!--end container fluid-->
     </section>
 
-    <!-- code section -->
-
+    <!--Code section-->
     <section id="code">
-        <div class="/container-fluid">
-
-
+        <div class="container-fluid">
             <!--Code Carousel-->
             <div id="carouselExampleControls" class="carousel slide" data-ride="true">
                 <h1>Check out my Code</h1>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <pre>
-                        <code class="language-javascript">
-                        $("#errorAlert").hide();
-                        $("#errorAlertButton").hide();
+                                <pre>
+                                <code class="language-javascript">
+                                $("#errorAlert").hide();
+                                $("#errorAlertButton").hide();
 
-                        $("#submitButton").click(function () {
-                            if ($("#phrase").val().length == 0) {
-                                $("#errorAlertButton").show();
-                                $("#submitButton").hide();
-                                $("#clearButton").hide();
-                                $("#errorAlert").show();
-                                return;
-                            }
+                                $("#submitButton").click(function () {
+                                    if ($("#phrase").val().length == 0) {
+                                        $("#errorAlertButton").show();
+                                        $("#submitButton").hide();
+                                        $("#clearButton").hide();
+                                        $("#errorAlert").show();
+                                        return;
+                                    }
 
-                        let lettersOnly = /[\W0-9_]/g;
-                        let cleanPhrase = $("#phrase").val().toLowerCase().replace(lettersOnly, "");
-                        let reversedPhrase = cleanPhrase.split("").reverse().join("");
+                                let lettersOnly = /[\W0-9_]/g;
+                                let cleanPhrase = $("#phrase").val().toLowerCase().replace(lettersOnly, "");
+                                let reversedPhrase = cleanPhrase.split("").reverse().join("");
 
-                        $("#resultText").val(reversedPhrase);
+                                $("#resultText").val(reversedPhrase);
 
-                        if (cleanPhrase === reversedPhrase) {
-                            $("#title").text("It's a Palindrome!");
-                        } else {
-                            $("#title").text("It's not a Palindrome.");
-                            }
-                        });
+                                if (cleanPhrase === reversedPhrase) {
+                                    $("#title").text("It's a Palindrome!");
+                                } else {
+                                    $("#title").text("It's not a Palindrome.");
+                                    }
+                                });
 
-                        $("#errorAlertButton").on("click", function () {
-                            $("#errorAlertButton").hide();
-                            $("#phrase").val("").focus();
-                            $("#submitButton").show();
-                            $("#clearButton").show();
-                            $("#title").text("taco cat");
-                            $("#resultText").val("");
-                            $("#errorAlert").hide();
-                        });
+                                $("#errorAlertButton").on("click", function () {
+                                    $("#errorAlertButton").hide();
+                                    $("#phrase").val("").focus();
+                                    $("#submitButton").show();
+                                    $("#clearButton").show();
+                                    $("#title").text("taco cat");
+                                    $("#resultText").val("");
+                                    $("#errorAlert").hide();
+                                });
 
-                        $("#clearButton").on("click", function () {
-                            $("#phrase").val("").focus();
-                            $("#title").text("taco cat");
-                            $("#resultText").val("");
-                        });
-                    </code>
-                 </pre>
+                                $("#clearButton").on("click", function () {
+                                    $("#phrase").val("").focus();
+                                    $("#title").text("taco cat");
+                                    $("#resultText").val("");
+                                });
+                            </code>
+                         </pre>
                     </div>
 
-                    <div class="carousel-item ">
-                        <!--<h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>-->
+                    <div class="carousel-item ">                        
                         <h3>From Visual Studio 2019</h3>
                         <img id="codeImage" src="images/ideCode.png" alt="code from ide">
                     </div>
