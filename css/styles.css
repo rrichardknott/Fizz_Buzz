@@ -27,23 +27,15 @@ div h3 span{
     padding: 3% 15% 7% 15%;
 }
 
-.titleH1{    
-    font-size: 3rem;    
-}
-
-
 /* NAVBAR */
-
 .navbar{
-    padding: 0 0 4.5rem 0;
-         
+    padding: 0 0 4.5rem 0;         
 }
 
 .navbar-brand{
     font-family: 'Ubuntu';
     font-size: 2.5rem;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .nav-item{
@@ -55,13 +47,7 @@ div h3 span{
     font-family: 'Montserrat';
 }
 
-
-/* BUTTONS */
-.download-button{
-    margin: 2rem 25px;
-}
-
-/* TITLE IMAGE */
+/* Title */
 .title-image{
     width: 50%;
     transform: rotate(20deg);      
@@ -69,6 +55,9 @@ div h3 span{
     right: 22%;
 }
 
+.download-button {
+    margin: 2rem 25px;
+}
 
 /* Try It Out */
 
@@ -135,8 +124,6 @@ div h3 span{
     width: 15%;
     margin: 20px 20px 50px 20px;
 }
-
-/* PRICING */
 
 #pricing{
     padding: 100px;    
