@@ -76,9 +76,13 @@ div h3 span{
     position: relative;
 }
 
-    #tryItOut h3 {
-        color: #ff4c68;
-    }
+#tryItOut h3 {
+    color: #ff4c68;
+}
+
+#tryItOutRow{
+    margin-top: 5%;
+}
 
 #firstNumber, #lastNumber{
     width: 100%;
