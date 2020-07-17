@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fizz Buzz</title>
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;900&family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -35,6 +35,9 @@
                             <a class="nav-link" href="#code">Code</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="https://richardknottportfolio.netlify.app">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contactMe">Contact</a>
                         </li>
                     </ul>
@@ -45,12 +48,11 @@
             <div class="row centerAlign">
                 <div class="col-lg-6 col-md-12">
                     <h1 class="titleH1">About the Project</h1>
-                    <h3 class="text-justify"><span>A typical example of the Fizz Buzz project is writing a program that prints the number 1 to 100 but for multiples of 3 and 5 print out the word 'FizzBuzz', for multiples of 3 only print out the word 'Fizz' and for multiple of 5 print out the word 'Buzz'.</span></h3>
-                    <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
-                    <button class="btn btn-outline-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+                    <h3 class="text-justify"><span>A typical example of the Fizz Buzz project is writing a program that prints the number 1 to 100 but for multiples of 3 and 5 print out the word 'FizzBuzz', for multiples of 3 only print out the word 'Fizz' and for multiple of 5 print out the word 'Buzz'.</span></h3>                    
+                    <button class="btn btn-outline-light btn-lg download-button text-left" type="button"><i class="fal fa-step-backward"></i> Portfolio</button>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <img class="title-image" src="images/FizzBuzz-removebg.png" alt="fizz buzz drink">
+                    <a href="https://www.youtube.com/watch?v=Qb5owKFFn-g" target="_blank"><img class="title-image" src="images/FizzBuzz-removebg.png" alt="fizz buzz drink"/></a>
                 </div>
             </div>
 
@@ -97,14 +99,12 @@
 
     <!--Code section-->
     <section id="code">
-        <div class="container-fluid">
-            <!--Code Carousel-->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="true">
+        <div class="container-fluid">            
+            <div clas="row">
                 <h1>Check out my Code</h1>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                                <pre>
-                                <code class="language-javascript">
+                <div class="col">
+                    <pre class="line-numbers">
+                        <code class="language-javascript">
                                 $("#errorAlert").hide();
                                 $("#errorAlertButton").hide();
 
@@ -145,23 +145,9 @@
                                     $("#title").text("taco cat");
                                     $("#resultText").val("");
                                 });
-                            </code>
-                         </pre>
-                    </div>
-
-                    <!--<div class="carousel-item ">                        
-                        <h3>From Visual Studio 2019</h3>
-                        <img id="codeImage" src="images/ideCode.png" alt="code from ide">
-                    </div>-->
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                         </code>
+                    </pre>                                  
+                </div>                
             </div>
         </div>
     </section>
@@ -174,9 +160,9 @@
     </section>
 
     <!--Section: Contact v.2-->
-    <section class="container mb-4" id="contactMe">
+    <section class="container mb-4" id="contact">
         <!--Section heading-->
-        <h2 class="font-weight-bold text-center my-4">Contact me</h2>
+        <h2 class="font-weight-bold text-center my-4" id="contactMe">Contact me</h2>
         <!--Section description-->
         <p class="text-center w-responsive mx-auto mb-5">
             Do you have any questions? Please do not hesitate to contact me directly. I will respond to your email within
@@ -245,21 +231,21 @@
             </div>
             <!--Grid column-->
             <!--Grid column-->
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 text-right">
                 <ul class="list-unstyled mb-0">
                     <li>
-                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>Richard@richardknott.io</p>                        
+                    </li>
+
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-2x text-center"></i>
                         <p>Los Angeles, CA, USA</p>
                     </li>
 
                     <li>
                         <i class="fas fa-phone mt-4 fa-2x"></i>
                         <p>+ (555) 555-5555</p>
-                    </li>
-
-                    <li>
-                        <i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>Richard@richardknott.io</p>
                     </li>
                 </ul>
             </div>
@@ -273,9 +259,8 @@
 
     <footer id="footer" class="text-center">
 
-        <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
-        <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
-        <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+        <a href="https://twitter.com/richard52297839"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>        
+        <a href="https://www.linkedin.com/in/rrichardknott"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
         <p>© Copyright 2020 Fizz Buzz</p>
 
     </footer>

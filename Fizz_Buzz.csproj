@@ -75,6 +75,7 @@
     <Content Include="images\bizinsider.png" />
     <Content Include="images\coderFoundry.png" />
     <Content Include="images\dog-img.jpg" />
+    <Content Include="images\favicon-32x32.png" />
     <Content Include="images\FizzBuzz-removebg.png" />
     <Content Include="images\ideCode.PNG" />
     <Content Include="images\iphone6.png" />
