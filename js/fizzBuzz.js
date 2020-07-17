@@ -1,6 +1,4 @@
-﻿
-$("#submitButton").click(function () {    
-        
+﻿$("#submitButton").click(function () {            
     let emptyString = "";
     let firstNumber = parseInt($("#firstNumber").val());    
     let lastNumber = parseInt($("#lastNumber").val());    
@@ -32,4 +30,3 @@ $("#clearButton").on("click", function () {
     $("#resultText").val("");
     $("#firstNumber").focus();
 });
-

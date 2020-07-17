@@ -18,7 +18,6 @@
 
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglefizzBuzz">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,10 +34,13 @@
                             <a class="nav-link" href="#code">Code</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://richardknottportfolio.netlify.app">Portfolio</a>
+                            <a class="nav-link" href="#contactMe">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contactMe">Contact</a>
+                            <a class="nav-link" href="https://github.com/rrichardknott/Fizz_Buzz">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://richardknottportfolio.netlify.app/blog-dark.html">My Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -98,59 +100,19 @@
     </section>
 
     <!--Code section-->
-    <section id="code">
-        <div class="container-fluid">            
-            <div clas="row">
-                <h1>Check out my Code</h1>
-                <div class="col" id="codeColumn">
-                    <pre class="line-numbers" id="preCodeSection">
-                        <code class="language-javascript">
-                                $("#errorAlert").hide();
-                                $("#errorAlertButton").hide();
-
-                                $("#submitButton").click(function () {
-                                    if ($("#phrase").val().length == 0) {
-                                        $("#errorAlertButton").show();
-                                        $("#submitButton").hide();
-                                        $("#clearButton").hide();
-                                        $("#errorAlert").show();
-                                        return;
-                                    }
-
-                                let lettersOnly = /[\W0-9_]/g;
-                                let cleanPhrase = $("#phrase").val().toLowerCase().replace(lettersOnly, "");
-                                let reversedPhrase = cleanPhrase.split("").reverse().join("");
-
-                                $("#resultText").val(reversedPhrase);
-
-                                if (cleanPhrase === reversedPhrase) {
-                                    $("#title").text("It's a Palindrome!");
-                                } else {
-                                    $("#title").text("It's not a Palindrome.");
-                                    }
-                                });
-
-                                $("#errorAlertButton").on("click", function () {
-                                    $("#errorAlertButton").hide();
-                                    $("#phrase").val("").focus();
-                                    $("#submitButton").show();
-                                    $("#clearButton").show();
-                                    $("#title").text("taco cat");
-                                    $("#resultText").val("");
-                                    $("#errorAlert").hide();
-                                });
-
-                                $("#clearButton").on("click", function () {
-                                    $("#phrase").val("").focus();
-                                    $("#title").text("taco cat");
-                                    $("#resultText").val("");
-                                });
-                         </code>
-                    </pre>                                  
-                </div>                
-            </div>
-        </div>
-    </section>
+<section class="line-numbers" id="code">
+<div class="container-fluid">            
+<div clas="row">
+<h1>Check out my Code</h1>
+<div class="col">
+<pre class="line-numbers" data-src="js/fizzBuzz.js" id="preCodeSection">
+<code class="language-javascript">                                
+</code>
+</pre>    
+</div>                
+</div>
+</div>
+</section>
 
     <!-- Press -->
 
@@ -231,12 +193,12 @@
             </div>
             <!--Grid column-->
             <!--Grid column-->
-            <div class="col-md-3 text-right">
+            <div class="col-md-3 text-right" id="contactLinks">
                 <ul class="list-unstyled mb-0">
-                    <li>
-                        <i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>Richard@richardknott.io</p>                        
-                    </li>
+                    <li>                        
+                        <a href="mailto:R.RichardKnott@Gmail.com" id="emailLink"><i class="fas fa-envelope mt-4 fa-2x"></i></a>
+                            <p>Email Me</p>
+</li>
 
                     <li>
                         <i class="fas fa-map-marker-alt fa-2x text-center"></i>
