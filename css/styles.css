@@ -1,6 +1,9 @@
 body{
     font-family: 'Montserrat','Ubuntu', sans-serif;
+    
 }
+
+
 
 #title {
     background-color: #ff4c68;
@@ -103,10 +106,10 @@ div h3 span{
 }
 
 /* Code */
-#code, #preCodeSection{
-    text-align: center;    
-    background-color: #ef8172;    
- }
+#code, #preCodeSection {
+    text-align: center;
+    background-color: #ef8172;
+}
 
 #codeImage{
     width: 100%;
