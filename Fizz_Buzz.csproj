@@ -89,6 +89,7 @@
     <Content Include="js\jquery-3.5.1.slim.min.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\prism.js" />
+    <Content Include="js\sweetalert.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
