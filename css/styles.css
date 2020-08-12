@@ -1,17 +1,17 @@
-body{
-    font-family: 'Montserrat','Ubuntu', sans-serif;
+body{    
+    font-family: 'Garamond', 'Montserrat', 'Ubuntu',sans-serif!important;
     
 }
 
 
 
 #title {
-    background-color: #ff4c68;
+    background-color: #00008b; /*#ff4c68*/
     color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Montserrat";
+h1, h2, h3, h4, h5, h6 {    
+    font-family: 'Garamond',"Montserrat", sans-serif; 
     font-weight: 600;
     line-height: 1.5;
 }
@@ -36,8 +36,7 @@ div h3 span{
     display: inline;
 }
 
-.navbar-brand{
-    font-family: 'Ubuntu';
+.navbar-brand{    
     font-size: 2.5rem;
     font-weight: bold; 
     margin-top: 0;
@@ -50,8 +49,7 @@ div h3 span{
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    font-size: 1.2rem;
-    font-family: 'Ubuntu';
+    font-size: 1.5rem;    
     color: white;
 }
 
@@ -80,7 +78,7 @@ div h3 span{
 }
 
 #tryItOut h3 {
-    color: #ff4c68;
+    color: #00008b;
 }
 
 #tryItOutRow{
@@ -100,29 +98,34 @@ div h3 span{
 
 #submitButton, #clearButton {
     width: 48%;
-    text-transform: uppercase;
-    background-color: #ff4c68;
+    text-transform: uppercase;    
+    background-color: #00008b;
     border: none;
 }
 
 /* Code */
 #code, #preCodeSection {
     text-align: center;
-    background-color: #ef8172;
+    background-color:#ff4c68; /*#ef8172*/
 }
 
-#codeImage{
+pre[class*="language-"] > code{
+    border-left: none!important;
+    box-shadow: none!important;
+}
+
+#codeImage {
     width: 100%;
 }
 
 #code h1{
     padding-top: 3%;
-    color: steelblue;
+    color: #00008b;
 }
 
 /*  PRESS  */
 #press{
-    background-color: #ef8172;
+    background-color: #ff4c68;
     text-align: center;
     margin-top: -3%;
     padding-bottom: 3%;
@@ -138,7 +141,7 @@ div h3 span{
 
 #contactMe{
     margin-top: 5%;
-    color: #ef8172;
+    color: #ff4c68;
 }
 
 #contact h3{   
@@ -160,6 +163,13 @@ li #emailLink{
 #contactButton{
     border:1px solid gray;
     width: 25%;
+    background-color: #00008b;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#contactButton:hover{
+    background-color: #ff4c68;
 }
 
 ul {
@@ -183,14 +193,14 @@ ul {
 }
 
 /* FONT AWESOME */
-.fa, .fas{
+.fa, .fas, .fab{
     font-size: 2rem;
-    color: #ef8172;  
+    color: #00008b;  
     margin-bottom: 1rem;  
 }
 
 .fa:hover, .fab:hover, .fas:hover{
-    color: #ef8172;
+    color: #ff4c68!important;
 }
 
 

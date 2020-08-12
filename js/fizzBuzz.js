@@ -28,7 +28,7 @@
     });
 
     //Email Setup//
-    //emailjs.init("");
+    emailjs.init("");
     
     $("#contactButton").on("click", function () {
         $("#contactButton").text("Sending...");
