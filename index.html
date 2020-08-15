@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fizz Buzz</title>
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;900&family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -51,7 +51,7 @@
                 <div class="col-lg-6 col-md-12">
                     <h1 class="titleH1">About the Project</h1>
                     <h3 class="text-justify"><span>A typical example of the Fizz Buzz project is writing a program that prints the number 1 to 100 but for multiples of 3 and 5 print out the word 'FizzBuzz', for multiples of 3 only print out the word 'Fizz' and for multiple of 5 print out the word 'Buzz'.</span></h3>
-                    <button onclick="window.location.href='https://richardknottportfolio.netlify.app';" class="btn btn-outline-light btn-lg download-button text-left" type="button"><i class="fal fa-step-backward"></i> Portfolio</button>
+                    <button onclick="window.location.href='https://richardknottportfolio.netlify.app';" class="btn btn-outline-light btn-lg download-button text-left" id="portfolioButton" type="button"><i class="fal fa-step-backward"></i> Portfolio</button>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <a href="https://www.youtube.com/watch?v=Qb5owKFFn-g" target="_blank"><img class="title-image" src="images/FizzBuzz-removebg.png" alt="fizz buzz drink" /></a>
@@ -67,14 +67,14 @@
         <div class="container-fluid">
             <div class="row" id="tryItOutRow">
                 <div class="col">
-                    <div>
+                    <div id="tryItOutH3H4">
                         <h3>Try it out</h3>
-                        <h4>Enter a first and last number to the right and press submit.</h4>
+                        <h4>Enter a first and last number and press submit.</h4>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="form-group">
-                        <h3>Numbers</h3>
+                    <div id="numbers">
+                        <h3 id="numbersH3">Numbers</h3>
                         <div class="row">
                             <div class="col">
                                 <input class="form-control numberInput bottomMargin" placeholder="First Number" id="firstNumber">
@@ -82,11 +82,13 @@
                             </div>
                         </div>
                     </div>
+                    <div id="submitClearButtonDiv">
                     <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
                     <button type="submit" id="clearButton" class="btn btn-success">Clear</button>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="form-group formGroupResults">
+                    <div id="results">
                         <h3>Results</h3>
                         <div class="row">
                             <div class="col">
@@ -196,7 +198,7 @@
             </div>
             <!--Grid column-->
             <!--Grid column-->
-            <div class="col-md-3 text-right" id="contactLinks">
+            <div class="col-md-3" id="contactLinks">
                 <ul class="list-unstyled mb-0">
                     <li>
                         <a href="mailto:R.RichardKnott@Gmail.com" id="emailLink"><i class="fas fa-envelope mt-4 fa-2x"></i></a><h4>Email Me</h4>
