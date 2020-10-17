@@ -219,11 +219,18 @@ ul {
         font-size: 100%;
     }
 
+   
+
     .navbar-brand {
         font-size: 100%;
+        margin-bottom: 20px;
     }
 
     /* Try It Out */
+
+    #navbarTogglefizzBuzz a{
+        font-size: 16px;
+    }
 
     #tryItOutH3H4Wrapper {
         margin-bottom: 200px;
@@ -243,7 +250,7 @@ ul {
         margin-bottom: 2%;
     }
 
-    #resultText {599
+    #resultText {
         height: 145px;
         width: 96%;
     }
@@ -298,6 +305,14 @@ ul {
         position: relative;
         font-size: 200%;
         right: -5%;
+    }   
+
+    form input, form textarea {
+        width: 288px!important;
+    }
+
+    #contact form{
+        text-align: center!important;
     }
 
     #contactLinks {
@@ -307,7 +322,11 @@ ul {
 
     #contactButton {
         margin-bottom: 5%;
+        font-size: 16px;
+        text-transform: uppercase;
     }
+
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px to 767) */
