@@ -25,7 +25,8 @@
         $("#lastNumber").val("");
         $("#resultText").val("");
         $("#firstNumber").focus();
-    });    
+    });  
+    
 
 });
 
